@@ -1,0 +1,111 @@
+.role-selector {
+  margin-bottom: 20px;
+}
+
+.role-title {
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.role-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.role-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #F3F4F6;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.role-card:hover {
+  background: #EEF2FF;
+  transform: translateX(4px);
+}
+
+.role-card.active {
+  background: #EEF2FF;
+  border-color: #4A6CF7;
+}
+
+.role-avatar {
+  font-size: 36px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: 1px solid #E5E7EB;
+}
+
+.role-info {
+  flex: 1;
+}
+
+.role-name {
+  font-weight: 600;
+  color: #1A1A1A;
+  font-size: 15px;
+}
+
+.role-grade {
+  font-size: 12px;
+  color: #6B7280;
+  margin-top: 2px;
+}
+
+.role-bio {
+  font-size: 12px;
+  color: #9CA3AF;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+/* 选中指示器 */
+.role-selected-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4A6CF7;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.role-card.active .role-selected-indicator {
+  opacity: 1;
+}
+
+/* 自定义角色 */
+.custom-role-card {
+  background: #FFFFFF;
+  border: 2px dashed #D1D5DB;
+  justify-content: center;
+  color: #6B7280;
+}
+
+.custom-role-card:hover {
+  border-color: #4A6CF7;
+  color: #4A6CF7;
+  background: #EEF2FF;
+}
+
+.custom-role-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}

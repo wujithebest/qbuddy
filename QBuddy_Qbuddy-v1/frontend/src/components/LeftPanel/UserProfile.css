@@ -1,0 +1,154 @@
+.user-profile {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #E5E7EB;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.profile-avatar {
+  font-size: 56px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F3F4F6;
+  border-radius: 50%;
+  border: 2px solid #E5E7EB;
+}
+
+.profile-basic {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin-bottom: 4px;
+}
+
+.profile-meta {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.profile-bio {
+  font-size: 14px;
+  color: #4B5563;
+  line-height: 1.6;
+  padding: 12px;
+  background: #EEF2FF;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.pain-points h4 {
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 10px;
+}
+
+.pain-points ul {
+  list-style: none;
+}
+
+.pain-points li {
+  font-size: 13px;
+  color: #4B5563;
+  padding: 8px 12px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border-left: 3px solid #EF4444;
+  line-height: 1.4;
+}
+
+/* 数据统计面板 */
+.stats-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background: #F3F4F6;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #E5E7EB;
+}
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4A6CF7;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #6B7280;
+}
+
+.stat-item.highlight .stat-value {
+  color: #EF4444;
+}
+
+.stat-item.highlight .stat-label {
+  color: #EF4444;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 32px;
+  background: #E5E7EB;
+}
+
+/* 痛点图标 */
+.pain-points ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pain-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border-left: 3px solid #EF4444;
+  transition: all 0.2s ease;
+}
+
+.pain-points li:hover {
+  border-left-color: #DC2626;
+  transform: translateX(4px);
+}
+
+.pain-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pain-text {
+  font-size: 13px;
+  color: #4B5563;
+  line-height: 1.5;
+  flex: 1;
+}

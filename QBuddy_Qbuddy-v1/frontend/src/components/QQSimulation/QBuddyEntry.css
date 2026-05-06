@@ -1,0 +1,116 @@
+.qbuddy-entry-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.notification-dot {
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  font-size: 28px;
+  color: #EF4444;
+  animation: pulse-dot 1.5s ease-in-out infinite;
+  z-index: 10;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+}
+
+.qbuddy-entry {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #4A6CF7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: scale 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: visible;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.qbuddy-entry:hover {
+  scale: 1.1;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.qbuddy-entry.active {
+  scale: 1.15;
+  animation: none;
+}
+
+.qbuddy-entry.pressed {
+  scale: 0.9;
+  animation: none;
+}
+
+.qbuddy-entry.disabled {
+  background: #9CA3AF;
+  cursor: not-allowed;
+  animation: none;
+}
+
+/* 眼睛容器 */
+.qbuddy-eyes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.15s ease-out;
+  transform-origin: center center;
+}
+
+/* 竖向长条豆豆眼 */
+.bar-eye {
+  width: 5px;
+  height: 14px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* happy状态：眼睛变弯 */
+.bar-eye.happy {
+  height: 10px;
+  border-radius: 3px 3px 0 0;
+  transform: scaleY(0.8);
+}
+
+/* worried状态：眼睛变小变圆 */
+.bar-eye.worried {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+
+.qbuddy-label {
+  font-size: 10px;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+/* 扫描状态动画 */
+.qbuddy-entry.scanning {
+  animation: pulse-scan 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-scan {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

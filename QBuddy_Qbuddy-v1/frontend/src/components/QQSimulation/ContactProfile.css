@@ -1,0 +1,258 @@
+.contact-profile {
+  height: 100%;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 56px; /* 为NavBar留空间 */
+}
+
+.profile-header {
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profile-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.back-btn {
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+  width: 40px;
+}
+
+.placeholder {
+  width: 40px;
+}
+
+.profile-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  padding-bottom: 80px;
+}
+
+/* 基本信息卡片 */
+.profile-basic-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+  /* removed shadow */
+}
+
+.basic-avatar {
+  font-size: 72px;
+  margin-bottom: 12px;
+}
+
+.basic-info {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.basic-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.basic-signature {
+  font-size: 13px;
+  color: #999;
+  max-width: 250px;
+}
+
+.relationship-tag {
+  background: #07c160;
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 板块通用样式 */
+.profile-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  /* removed shadow */
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* QQ生态卡片 */
+.ecosystem-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eco-card {
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.eco-gaming {
+  background: #e3f2fd;
+}
+
+.eco-video {
+  background: #F0F4FF;
+}
+
+.eco-music {
+  background: #e8f5e9;
+}
+
+.eco-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.eco-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+  flex-shrink: 0;
+  min-width: 40px;
+}
+
+.eco-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.eco-item {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* 动态列表 */
+.dynamics-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dynamics-item {
+  padding: 12px;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.dyn-content {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.dyn-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dyn-time {
+  font-size: 11px;
+  color: #999;
+}
+
+.dyn-stats {
+  font-size: 11px;
+  color: #999;
+}
+
+/* 兴趣标签 */
+.interest-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interest-tag {
+  background: #f0f0f0;
+  color: #666;
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+}
+
+/* 最近事件 */
+.recent-events {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recent-event-item {
+  font-size: 13px;
+  color: #555;
+  padding: 8px 12px;
+  background: #f8f8f8;
+  border-radius: 6px;
+}
+
+/* 底部发消息按钮 */
+.profile-footer {
+  position: sticky;
+  bottom: 56px; /* 在NavBar上方 */
+  left: 0;
+  right: 0;
+  padding: 12px 16px;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+  z-index: 5;
+}
+
+.send-message-btn {
+  width: 100%;
+  height: 44px;
+  background: #07c160;
+  color: #fff;
+  border: none;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.send-message-btn:hover {
+  background: #07c160;
+}
+
+.send-message-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

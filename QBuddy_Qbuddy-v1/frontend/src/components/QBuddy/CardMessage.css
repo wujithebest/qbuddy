@@ -1,0 +1,562 @@
+.card-message {
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  border: 1px solid #E5E7EB;
+  /* removed shadow transition */
+}
+
+.card-category-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 10px 12px 0;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid;
+  width: fit-content;
+}
+
+.card-message:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.card-type-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.card-title-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1A1A1A;
+}
+
+.card-summary {
+  font-size: 13px;
+  color: #6B7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.expand-icon {
+  font-size: 12px;
+  color: #9CA3AF;
+  transition: transform 0.3s;
+}
+
+.expand-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.card-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.card-detail.show {
+  max-height: 600px;
+}
+
+.card-detail-content {
+  padding: 0 16px 16px;
+}
+
+.detail-section {
+  background: #F3F4F6;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-size: 13px;
+  color: #6B7280;
+  flex-shrink: 0;
+}
+
+.detail-value {
+  font-size: 13px;
+  color: #1A1A1A;
+  text-align: right;
+  max-width: 70%;
+}
+
+.detail-value.highlight {
+  color: #DC2626;
+  font-weight: 600;
+}
+
+/* 投票样式 */
+.vote-options {
+  margin: 12px 0;
+}
+
+.vote-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.option-name {
+  font-size: 13px;
+  color: #1A1A1A;
+  width: 80px;
+}
+
+.vote-bar {
+  flex: 1;
+  height: 8px;
+  background: #E5E7EB;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.vote-fill {
+  height: 100%;
+  background: #4A6CF7;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.vote-count {
+  font-size: 12px;
+  color: #6B7280;
+  width: 40px;
+  text-align: right;
+}
+
+/* 温度计 */
+.temperature-meter {
+  margin-top: 12px;
+}
+
+.temp-label {
+  font-size: 13px;
+  color: #6B7280;
+  margin-bottom: 8px;
+}
+
+.temp-bar {
+  height: 10px;
+  background: #F3F4F6;
+  border-radius: 5px;
+  position: relative;
+}
+
+.temp-fill {
+  height: 100%;
+  background: #4A6CF7;
+  border-radius: 5px;
+  position: relative;
+}
+
+.temp-fill.cooling {
+  background: #4A6CF7;
+}
+
+/* 聚合卡片样式 */
+.grouped-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+  border-left: 3px solid #4A6CF7;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.grouped-card-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #F3F4F6;
+  gap: 8px;
+}
+
+.grouped-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+
+.grouped-card-count {
+  background: #4A6CF7;
+  color: #FFFFFF;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.grouped-card-list {
+  padding: 8px 12px;
+}
+
+/* 卡片操作按钮 */
+.card-actions {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  border-top: 1px solid #F3F4F6;
+}
+
+.card-action-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.card-action-btn.primary {
+  background: #4A6CF7;
+  color: #FFFFFF;
+}
+
+.card-action-btn.primary:hover {
+  background: #3B5AE0;
+}
+
+.card-action-btn.secondary {
+  background: #F3F4F6;
+  color: #6B7280;
+  border: 1px solid #E5E7EB;
+}
+
+.card-action-btn.secondary:hover {
+  background: #EEF2FF;
+  color: #4A6CF7;
+  border-color: #4A6CF7;
+}
+
+/* 高亮关键词 */
+.highlight-keyword {
+  background: #FEF3C7;
+  padding: 0 2px;
+  border-radius: 2px;
+  color: #D97706;
+}
+
+/* ===== 聚合卡片样式 ===== */
+.grouped-card-container {
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #E5E7EB;
+  overflow: hidden;
+  margin-bottom: 12px;
+  border-left: 4px solid #4A6CF7;
+}
+
+.grouped-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #F3F4F6;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.grouped-category-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+
+.grouped-count {
+  font-size: 12px;
+  color: #6B7280;
+  margin-left: 4px;
+}
+
+.grouped-sub-cards {
+  padding: 8px 12px;
+}
+
+.grouped-sub-card {
+  background: #F3F4F6;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.grouped-sub-card:last-child {
+  margin-bottom: 0;
+}
+
+.sub-card-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sub-card-type-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.sub-card-title-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.sub-card-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1A1A1A;
+}
+
+.sub-card-summary {
+  font-size: 12px;
+  color: #6B7280;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sub-card-detail {
+  padding: 0 12px 10px;
+}
+
+.sub-card-content {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.sub-detail-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sub-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.sub-detail-row span:first-child {
+  color: #6B7280;
+}
+
+.sub-detail-row span:last-child {
+  color: #1A1A1A;
+  font-weight: 500;
+  text-align: right;
+  max-width: 70%;
+}
+
+.sub-detail-row span.highlight {
+  color: #DC2626;
+  font-weight: 600;
+}
+
+.sub-detail-row.suggestion span:last-child {
+  color: #4A6CF7;
+  font-style: italic;
+}
+
+.sub-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* ===== 操作按钮通用样式 ===== */
+.action-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.action-btn.primary {
+  background: #4A6CF7;
+  color: #FFFFFF;
+}
+
+.action-btn.primary:hover {
+  background: #3B5AE0;
+}
+
+.action-btn.secondary {
+  background: #F3F4F6;
+  color: #6B7280;
+  border: 1px solid #E5E7EB;
+}
+
+.action-btn.secondary:hover {
+  background: #EEF2FF;
+  color: #4A6CF7;
+  border-color: #4A6CF7;
+}
+
+/* ===== 分类标签颜色恢复 ===== */
+.card-category-tag.ddl {
+  background: #FEF2F2;
+  color: #DC2626;
+  border-color: #FECACA;
+}
+
+.card-category-tag.vote {
+  background: #FFFBEB;
+  color: #D97706;
+  border-color: #FDE68A;
+}
+
+.card-category-tag.at {
+  background: #EFF6FF;
+  color: #2563EB;
+  border-color: #BFDBFE;
+}
+
+.card-category-tag.buddy_cooling {
+  background: #FFFBEB;
+  color: #D97706;
+  border-color: #FDE68A;
+}
+
+.card-category-tag.reactivate {
+  background: #FFFBEB;
+  color: #D97706;
+  border-color: #FDE68A;
+}
+
+.card-category-tag.birthday {
+  background: #FDF2F8;
+  color: #DB2777;
+  border-color: #FBCFE8;
+}
+
+.card-category-tag.channel {
+  background: #EEF2FF;
+  color: #5856D6;
+  border-color: #C7D2FE;
+}
+
+.card-category-tag.buddy_activity {
+  background: #FDF4FF;
+  color: #AF52DE;
+  border-color: #E9D5FF;
+}
+
+.card-category-tag.ecosystem {
+  background: #EEF2FF;
+  color: #5856D6;
+  border-color: #C7D2FE;
+}
+
+/* ===== 输入框样式 ===== */
+.greeting-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #1A1A1A;
+  outline: none;
+  transition: border-color 0.2s;
+  margin-top: 8px;
+  background: #FFFFFF;
+}
+
+.greeting-input:focus {
+  border-color: #4A6CF7;
+}
+
+/* ===== 发送动画 ===== */
+.card-message.sending {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* ===== fade-in动画 ===== */
+.fade-in {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 已标记不感兴趣的卡片 - 整张变灰 */
+.card-message.dismissed {
+  opacity: 0.45;
+  background: #E5E7EB;
+  filter: grayscale(1);
+  pointer-events: none;
+}
+
+.card-message.dismissed .card-category-tag,
+.card-message.dismissed .card-type-badge,
+.card-message.dismissed .card-header,
+.card-message.dismissed .card-detail {
+  filter: grayscale(1);
+  background: transparent;
+}
+
+.card-message.dismissed .card-detail-content {
+  filter: grayscale(1);
+}

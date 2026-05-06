@@ -1,0 +1,183 @@
+.custom-role-form {
+  padding: 16px;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.form-header h2 {
+  font-size: 18px;
+  color: #1A1A1A;
+  margin: 8px 0 4px;
+}
+
+.form-desc {
+  font-size: 12px;
+  color: #9CA3AF;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1A1A1A;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-input {
+  flex: 1;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #F3F4F6;
+  color: #1A1A1A;
+}
+
+.form-input:focus {
+  border-color: #4A6CF7;
+  background: #FFFFFF;
+}
+
+.option-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option-grid.multi {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.option-card {
+  border: 1.5px solid #E5E7EB;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #FFFFFF;
+}
+
+.option-card:hover {
+  border-color: #4A6CF7;
+  background: #EEF2FF;
+}
+
+.option-card.selected {
+  border-color: #4A6CF7;
+  background: #EEF2FF;
+}
+
+.option-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1A1A1A;
+}
+
+.option-desc {
+  display: block;
+  font-size: 11px;
+  color: #9CA3AF;
+  margin-top: 2px;
+}
+
+.multi .option-card {
+  padding: 6px 12px;
+}
+
+.multi .option-label {
+  font-size: 12px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.form-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-btn.primary {
+  background: #4A6CF7;
+  color: white;
+  border: none;
+}
+
+.form-btn.primary:hover {
+  background: #3B5AE0;
+}
+
+.form-btn.secondary {
+  background: #FFFFFF;
+  color: #6B7280;
+  border: 1px solid #E5E7EB;
+}
+
+.form-btn.secondary:hover {
+  background: #F3F4F6;
+}
+
+/* 标签输入 */
+.tag-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px;
+  background: #F3F4F6;
+  border-radius: 8px;
+  min-height: 40px;
+  align-items: center;
+}
+
+.tag-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #EEF2FF;
+  color: #4A6CF7;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.tag-remove {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.tag-remove:hover {
+  opacity: 1;
+}
+
+.tag-input {
+  flex: 1;
+  min-width: 80px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 13px;
+  color: #1A1A1A;
+}
